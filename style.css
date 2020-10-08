@@ -1,0 +1,18 @@
+body { 
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: lightblue;
+  color: rgb(31, 28, 28);
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  display: block;
+}
+
+.line-through { 
+  text-decoration: line-through;
+}
