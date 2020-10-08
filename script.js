@@ -44,10 +44,14 @@ const filterTodo = (term) => {
  Array.from(list.children)
   .filter((newTodo) => !newTodo.textContent.toLowerCase().includes(term))
   .forEach((newTodo) => newTodo.classList.add('filtered'));
+
+  Array.from(list.children)
+    .filter((newTodo) => newTodo.textContent.toLowerCase().includes(term))
+    .forEach((newTodo) => newTodo.classList.remove('filtered'));
 };
 
 search.addEventListener('keyup', () => {
-  const term = search.value.trim().loLowerCase();
+  const term = search.value.trim().toLowerCase();
   filterTodo(term);
 });
 

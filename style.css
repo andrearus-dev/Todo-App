@@ -16,3 +16,7 @@ label {
 .line-through { 
   text-decoration: line-through;
 }
+
+.filtered {
+  display: none;
+}
